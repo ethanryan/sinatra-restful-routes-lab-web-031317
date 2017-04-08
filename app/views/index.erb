@@ -1,0 +1,10 @@
+<h1>This is the Recipe Index Page.</h1>
+
+<h3>Listed below are all the recipes:</h3>
+
+<% @recipes.each do |each_recipe| %>
+<ul><h2><a href="/recipes/<%= each_recipe.id %>"><%= each_recipe.name %></a></h2></ul>
+<ul><%= each_recipe.ingredients %></ul>
+<ul><%= each_recipe.cook_time %></ul>
+<br>
+ <% end %>

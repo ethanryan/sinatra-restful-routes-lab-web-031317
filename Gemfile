@@ -7,6 +7,10 @@ gem 'sinatra'
 gem 'sqlite3'
 gem 'tux'
 gem 'rake'
+gem 'shotgun' #adding this...
+#tried 'bundle exec rake' but didn't work,
+#so did 'bundle clean --force' 
+#then 'bundle' to get correct gem 'rake' version installed.
 gem 'require_all'
 
 group :test do

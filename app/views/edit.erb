@@ -1,0 +1,23 @@
+This is the recipe form edit page, to edit recipes.
+
+<h3>Edit This Recipe:</h3>
+
+  <body>
+    <form action="/recipes/<%=@recipe.id %>" method="post">
+      <input id="hidden" type="hidden" name="_method" value="patch">
+      <br><br>
+      Edit Recipe Name: <%=@recipe.name%>
+      <br>
+      <input id="name" type="string" name="name"></input>
+      <br><br>
+      Edit Recipe Ingredients: <%=@recipe.ingredients%>
+      <br>
+      <textarea id="ingredients" type="string" name="ingredients"></textarea>
+      <br><br>
+      Edit Cook Time: <%=@recipe.cook_time%>
+      <br>
+      <input id="cook_time" type="string" name="cook_time"></input>
+      <br><br>
+      <input type="submit" value="submit">
+    </form>
+  </body>

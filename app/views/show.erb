@@ -1,0 +1,17 @@
+<h1>This is the Recipe Show Page.</h1>
+
+<form action="/recipes/<%=@recipe.id%>/delete" method="post">
+<input id="hidden" type="hidden" name="_method" value="delete">
+
+<h3><%=@recipe.name%></h3>
+<%=@recipe.ingredients%>
+<br>
+<%=@recipe.cook_time%>
+<br>
+<br>
+<input type="submit" id="delete" value="delete">
+</form>
+
+Click here to <a href="/recipes/<%= @recipe.id %>/edit">edit <%=@recipe.name%> recipe</a>.
+
+<h4>This is the <%=@recipe.name%> Recipe Show Page (with delete option).</h4>
